@@ -6,11 +6,11 @@ var vowels = ["a","e","i","o","u","y","A","E","I","O","U","Y"];
 var pigSentence = function(input){
   var sentence = input.split(' ');
   newSentence = sentence.map(function(word){
-      console.log(pigWord(word));
+      // console.log(pigWord(word));
 
       return pigWord(word);
   });
-  console.log(newSentence);
+  // console.log(newSentence);
   return newSentence.join(' ');
 };
 
@@ -25,6 +25,8 @@ var pigWord = function(word) {
         return word.slice(i+1) + word.slice(0,i+1) + 'ay';
       } else if(vowels.includes(word[i])) {
         return(word.slice(i) + word.slice(0,i) + 'ay');
+      } else {
+        return (pigWord("Error"))
       }
     }
   }
