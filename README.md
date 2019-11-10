@@ -1,4 +1,4 @@
-# Pig Dice
+# Pig Latin
 
 #### This program takes user input and returns it translated inot pig latin
 
